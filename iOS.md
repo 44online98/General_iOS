@@ -1,4 +1,4 @@
-# VNSwift
+# iOS 
 1) Khác nhau giữa clipsToBounds và  masksToBounds
 
     _clipsToBounds sử dụng cho View
@@ -82,7 +82,7 @@ Lợi thế trong việc sử dụng stack là tốc độ nhanh, sự đơn gi�
     +non-atomic là thằng default behavior(created using @property and @synthesize) , NOT thread-safe ,  fast
 
     http://stackoverflow.com/questions/588866/whats-the-difference-between-the-atomic-and-nonatomic-attributes
-6)  
+6)
 Alloc : Class method of NSObject. Returns a new instance of the receiving class.
 
 Init : Instance method of NSObject. Implemented by subclasses to initialize a new object (the receiver) immediately after memory for it has been allocated.
@@ -102,55 +102,53 @@ So to conclude we can say that
 alloc goes with init
 
 new = alloc + init
-————
-thứ tự set text cho label, case multi lines
-+ set text
-+ set width
-+ set numberOfLines = 0
-+ set sizeToFit()
-+ set right, left
+7)
+    Thứ tự set text cho label, case multi lines
+        + set text
+        + set width
+        + set numberOfLines = 0
+        + set sizeToFit()
+        + set right, left
 
--------
-viewWillDisappear
- + if call view.endEditing(true) ==> hidden keyboard (NStificationCenter hiddenKeyboard)
-viewDidDisappear
-+ if call view.endEditing(true) ==> not hidden keyboard
--------
-setting colletionView by Coding 
-for Vertical and Horizontal
-+ layout  [seaction Insets, Min Spacing, Content Insets]
-+ scroll direction
-+ scroll indicator
-+ bounce
--------
-file .p12 được export từ Distribution file 
-để dùng cho nhiều người
--------
-podFile của CocoaPod  không phải là file text
--------
-annotationView in mapView
-// If YES, a standard callout bubble will be shown when the annotation is selected.
-// The annotation must have a title for the callout to be shown.
-open var canShowCallout: Bool
-DateFormatter YYYY sẽ dễ sai 
-xài yyyy thì bình thường, cần tìm hiểu lại YYYY là gì
-UILabel, set text for label have '```' at the end
-nameLabel.adjustsFontSizeToFitWidth = false
-nameLabel.lineBreakMode = .byTruncatingTail
-case byWordWrapping // Wrap at word boundaries, default
+8)
+    viewWillDisappear
+     + if call view.endEditing(true) ==> hidden keyboard (NStificationCenter hiddenKeyboard)
+    viewDidDisappear
+    + if call view.endEditing(true) ==> not hidden keyboard
+9)
+    setting colletionView by Coding
+    for Vertical and Horizontal
+        + layout  [seaction Insets, Min Spacing, Content Insets]
+        + scroll direction
+        + scroll indicator
+        + bounce
+10)
+    file .p12 được export từ Distribution file
+    để dùng cho nhiều người
+11)
+    podFile của CocoaPod  không phải là file text
+12)
+    annotationView in mapView
+    // If YES, a standard callout bubble will be shown when the annotation is selected.
+    // The annotation must have a title for the callout to be shown.
+    open var canShowCallout: Bool
+    DateFormatter YYYY sẽ dễ sai
+    xài yyyy thì bình thường, cần tìm hiểu lại YYYY là gì
+    UILabel, set text for label have '```' at the end
+    nameLabel.adjustsFontSizeToFitWidth = false
+    nameLabel.lineBreakMode = .byTruncatingTail
+    case byWordWrapping // Wrap at word boundaries, default
 
-case byCharWrapping // Wrap at character boundaries
+    case byCharWrapping // Wrap at character boundaries
 
-case byClipping // Simply clip
+    case byClipping // Simply clip
 
-case byTruncatingHead // Truncate at head of line: "...wxyz"
+    case byTruncatingHead // Truncate at head of line: "...wxyz"
 
-case byTruncatingTail // Truncate at tail of line: "abcd..."
+    case byTruncatingTail // Truncate at tail of line: "abcd..."
 
-case byTruncatingMiddle // Truncate middle of line:  "ab...yz"
-------
-Cách xoá Derivered Data
-File ==> Project Setting ==> nhấn và dấu mũi tên màu xám, rồi xoá
+    case byTruncatingMiddle // Truncate middle of line:  "ab...yz"
+
 
 
 
