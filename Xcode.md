@@ -1,8 +1,9 @@
 #Xcode
-1)
-    Cách xoá Derivered Data
-    File ==> Project Setting ==> nhấn và dấu mũi tên màu xám, rồi xoá
-2)   Pragma         Pragma Mark
+1)  Cách xoá Derivered Data
+
+            File ==> Project Setting ==> nhấn và dấu mũi tên màu xám, rồi xoá
+2)   Pragma Mark
+
     #pragma mark - is a great way to organize the code inside a class and helps you grouping methods implementation. We suggest to use #pragma mark -to separate:
     * methods in functional groupings
     * protocols implementations.
