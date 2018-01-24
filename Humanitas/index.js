@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
+import index from './js';
 
-AppRegistry.registerComponent('Humanitas', () => App);
+AppRegistry.registerComponent('Humanitas', () => index);
