@@ -149,8 +149,8 @@
     case byTruncatingTail // Truncate at tail of line: "abcd..."
 
     case byTruncatingMiddle // Truncate middle of line:  "ab...yz"
+13)
 
-
-
+How to detect a URL in a String using NSDataDetector
 
 
