@@ -1,0 +1,92 @@
+different clipstobounds and  maskstobounds
+initView
++http://stackoverflow.com/questions/15978370/proper-practice-for-subclassing-uiview
+_khác nhau giữa 
++initWithFrame
++initWithCoder
+==>http://stackoverflow.com/questions/8068834/how-to-alloc-initwithcoder-or-initwithframe
+_ khi nào gọi layoutSubviews
+==>http://blog.logichigh.com/2011/03/16/when-does-layoutsubviews-get-called/
+_thứ tự của initWithNibName: initWithCoder awakeFromNib
+==>https://www.quora.com/Cocoa-API-What-is-the-difference-between-initWithCoder-initWithNibName-and-awakeFromNib-1
+_customize UIPageControl của UIPageViewController ==> UIPageControl.appearance()
+CFStringRef  đi chung với CFRelease
+_ 1 View have multi Color 
+==> http://stackoverflow.com/documentation/ios/1190/cagradientlayer/4227/creating-a-cggradientlayer-with-multiple-colors#t=201608240300394601754
+_ draw 1 View complex
+==> http://stackoverflow.com/documentation/ios/3186/uibezierpath/10893/how-to-apply-shadows-to-uibezierpath#t=201608240300540096948
+_ CustomView from file XIB
+==> http://stackoverflow.com/documentation/ios/1362/custom-uiviews-from-xib-files#t=201608240306031367292
+- Crash APP
+==>http://stackoverflow.com/documentation/ios/4745/debugging-crashes/16682/finding-information-about-a-crash#t=201608240329487412429
+_Animation header View + ScrollView
+==>https://github.com/gskbyte/GSKStretchyHeaderView
+_how to create TriangleView 
+==> use CoreGraphic  Or CAShapeLayer 
++Set ImageView in Swift
+        let tempImage:UIImage = ContentManager.sharedInstance.getImageFormPath(data.image!)
+        imageView = UIImageView(image: tempImage)
+https://developer.apple.com/reference/uikit/uicollectionview
+
+https://github.com/shu223/iOS-10-Sampler
+Sau này bị lỗi text bị optional chỉ cần thêm ! vào cái hàm xử lý text
+let predicate = NSPredicate(format: "SELF CONTAINS[cd] %@", text!) la` câu lệnh search được chữ thường, chữ hoa
+let predicate = NSPredicate(format: "SELF contains %@", text!),text phải đúng từng ký tự
+2016-09-19T06:11:17.822519Z 1 [Note] A temporary password is generated for root@localhost: YnomreyYa9_P
+
+
+JSQMessageAvataImageFactory : update ham`
+JSQMessageBubbleImageFactory : : update ham`
+JSQMessageViewController : xoa’ khai bao’ 2 bien’ senderId, displayName
+———
+de tim kiem trong tableView
+tu` Khoa’ sectionIndexTitlesForTableView
+———————————
+Yosing ==>
+view cha internal func aaa
+view con overide func aaa, super.aaa
+lib appirater 
+A utility that reminds your iPhone app's users to review the app
+——
+Uber  have services:
++ UberSUV: 1-6 seats
++ UberXL: 1-7 seats
+no option to select multiple cars 
+———
+//        // add Contraints _mainScrollView
+//        self._viewContainer.addSubview(_mainScrollView)
+//        self._mainScrollView.translatesAutoresizingMaskIntoConstraints = false
+//        self._viewContainer.addConstraints(
+//            NSLayoutConstraint.constraintsWithVisualFormat(
+//                "V:|-0-[mainScrollView]-0-|",
+//                options: [],
+//                metrics: nil,
+//                views: ["mainScrollView" : self._mainScrollView])
+//        )
+//        self._viewContainer.addConstraints(
+//            NSLayoutConstraint.constraintsWithVisualFormat(
+//                "H:|-0-[mainScrollView]-0-|",
+//                options: [],
+//                metrics: nil,
+//                views: ["mainScrollView" : self._mainScrollView])
+//        )
+//        // add Contraints _hotArtistsCollectionView
+//        self._viewContainer.addSubview(_hotArtistsCollectionView)
+//        self._hotArtistsCollectionView.translatesAutoresizingMaskIntoConstraints = false
+//        self._viewContainer.addConstraints(
+//            NSLayoutConstraint.constraintsWithVisualFormat(
+//                "V:|-16-[hotArtists]-0-|",
+//                options: [],
+//                metrics: nil,
+//                views: ["hotArtists" : self._hotArtistsCollectionView])
+//        )
+//        self._viewContainer.addConstraints(
+//            NSLayoutConstraint.constraintsWithVisualFormat(
+//                "H:|-0-[hotArtists]-0-|",
+//                options: [],
+//                metrics: nil,
+//                views: ["hotArtists" : self._hotArtistsCollectionView])
+//        )
+//        self._viewContainer.backgroundColor = UIColor.clearColor()
+
+https://www.facebook.com/notes/ide-academy/bộ-sưu-tập-39-thư-viện-giao-diện-ui-swift-nổi-bật-nhất-phần-1/385200415205126 

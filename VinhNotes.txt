@@ -1,0 +1,280 @@
+Pass :github = pass Apple ID
+Pass :gmail
+Pass :Game
+https://github.com/yingogobot/Swift-Useful-Extensions/blob/master/Swift-Useful-Extensions/UIView-ShortCuts.swift
+Number Phone Rose:0932353950
+DropDownMenu
+Create 1 Cell have 2 View [viewTitle,viewDetail]
+at cellForRow , setuplayout with condition cell.select
+at didSelected , reload at indexPath
+Routing: Là khái niệm của sự chuyển dịch qua lại các view.
+DN 4 79 OA 764 00089
+https://translate.google.com.vn/#en/vi/plain%0Aduplicate%0Atrack%0Aside
+http://stackoverflow.com/questions/38961052/how-to-get-cell-on-label-or-imageview-tap-uitapgesturerecognizer
+var CampaignArray:NSMutableArray = []
+            NSUserDefaults.standardUserDefaults().setObject("1", forKey: "isLogin")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        let isLogin : String? = NSUserDefaults.standardUserDefaults().objectForKey("isLogin") as? String
+        if(isLogin == "1"){
+            print(1)
+        }else{
+            print(2)
+        }
+
+Coding rules
+Đọc kỹ Design + Spec trước khi làm
+Mục đích chung:
+	•	Code rõ ràng, dễ hiểu, dễ sửa.
+	•	Thống nhất format dùng chung trong cùng 1 project nhiều người code. Nếu project có các quy định riêng của KH thì tuân theo các quy định đó.
+Cụ tỉ:
+Các quy định về coding style:
+	•	Dấu ngoặc {}: viết trên cùng 1 dòng code.
+if (condition) {
+   ...
+} else {
+
+}
+	•	Ký tự trắng " ": sử dụng ký tự trắng theo như ngữ pháp ngôn ngữ con người (không để ký tự trắng liền nhau giữa các từ, đặt ký tự trắng sau các ký tự đặc biệt...). Không dùng ký tự tab => setting trong xcode.
+@property (nonatomic, assign) NSInteger objectId;
+
+NSDictionary *dic = @{key1: value1, key2: value2};
+NSArray *arr = @[value1, value2];
+NSNumber *num = @(1);
+
+if ((a > 1) && (b == 2)) {
+   ...
+} else {
+
+}
+
+for (int i = 0; i < 10; i++) {
+
+}
+
+a = b > 1 ? 1 : 0;
+
+-(void)method:(NSString *)param;
+	•	Thụt lề (indent): tối đa 5 mức. Để tránh thụt lề quá sâu thì chia nhỏ hàm.
+	•	Xuống dòng:
+	◦	Tối đa 1 dòng trắng
+	◦	Đặt dòng trắng sau phần comment header của file; sau phần import, define; cuối file, trước @end; sau mỗi functions; sau block @interface; sau dòng @implement; sau #pragma mark -.
+//
+// Create on 2015/12/31
+//
+
+#import <UIKit/UIKit.h>
+
+#define kName 1
+
+@interface ClassName
+
+@property (nonatomic, assign) NSInteger objectId;
+
+-(void)method:(NSString *)param;
+
+@end
+
+@implement ClassName
+
+#pragma mark - Life cycle
+
+-(void)viewDidLoad() {
+
+}
+
+#pragma mark - Tasks
+
+-(void)method:(NSString *)param {
+
+}
+
+-(void)method:(NSString *)param {
+
+}
+
+@end
+
+	•	Trình bày file code:
+	◦	Chia nhóm theo chức năng, luồng xử lý, sử dụng #pragma mark -. Ví dụ: nhóm các hàm cofigure và khởi tạo, các hàm table delegate, các hàm IBAction...
+	◦	Các hàm không nên viết dài, chia nhỏ các hàm thành các task con.
+	◦	File class cũng tương tự, không viết quá dài. Chia nhỏ class thành các class con theo chức năng (không ôm nhiều chức năng vào 1 class). Cũng có thể chia nhỏ class thành các file category.
+	•	Đặt tên:
+	◦	Tên cần có ý nghĩa => phản ánh biến, hàm ... làm gì.
+	◦	Mỗi project cần có 1 prefix (2-3 ký tự viết hoa), tên tất cả các class, enum, define, protocol, typedef, struct nằm trong project đều phải có prefix này (ký tự sau prefix cũng phải viết hoa). Tên các đối tượng trên cũng không được chứa '_' mà viết hoa chữ cái đầu từ (word).
+	◦	const, giá trị của enum bắt đầu = 'k' + prefix.
+	◦	define viết hoa toàn bộ
+	◦	Tên hàm bắt đầu bằng ký tự thường. Tên hàm IBAction bao gồm <tên control>_<tên hành động (event)>. Tên hàm nên bắt đầu = động từ, hàm có giá trị trả về nên bắt đầu = các động từ mang tính "trả về" như get, make, trả về BOOL như should, need.
+	◦	Tên biến bắt đầu bằng ký tự thường. Tên biến BOOL nên bắt đầu bằng 'is'. Tên biến UI control có prefix tương ứng. Tên biến Array có prefix 'arr', Dictionary 'dic'.
+	◦	Tên view controller phải có suffix là 'ViewController', tên custom cell có suffix 'Cell', tên custom view nên có suffix liên quan đến class super (vd CMTwoStateButton).
+	◦	Tên các file resource đều phải viết thường, dùng '_' để phân cách từ, ko chứa ' '. Các file ảnh NÊN có prefix và tên giống với đối tượng hiển thị (vd btn_ok.png cho button btn_ok).
+typedef NS_ENUM(NSInteger, EXMyEnum) {
+  kEXMyVal = 1,
+  kEX_your_val
+}
+
+#define EX_ANIMATION_TIME 1.0f
+
+NSInteger const kEXConstValue = 1;
+
+@interface EXClassName
+
+@property (nonatomic, assign) NSInteger objectId;
+@property (nonatomic, assign) BOOL isChanged;
+@property (nonatomic, readonly) NSArray *arrItems;
+
+@property (nonatomic, weak) IBOutlet UIButton *btnOK;
+
+-(IBAction)btnOK_onTap:(id *)sender;
+-(NSString*)getFullName;
+
+@end
+
+Cấu trúc project:
+	•	Các file trong project chia theo các nhóm
+	•	Cấu trúc thư mục của project giống như cấu trúc cây project trong XCode.
+	•	Các nhóm chính cần có:
+	◦	Common: các class dùng chung
+	◦	Custom: các class (UI control) custom. Có thể chia nhỏ thành 2 mục con: Views - các custom view; Cells - các custome table view cell.
+	◦	Library: các library (framework, static lib, source code) bên ngoài. Ưu tiên dùng CocoaPods. Các library custom lại thì để vào đây.
+	◦	Models: chứa các class object models dùng trong project.
+	◦	Resources: chứa các file data như ảnh, audio ... Trong này cũng có thể chia nhỏ thành các mục con như Audio - các file âm thanh, Fonts - các file font, Images - các file ảnh .... Các file ảnh cũng phải chia nhỏ thành các mục như Common, Icons, theo màn hình (nếu dùng xcassets cũng phải chia nhóm).
+	◦	ViewControllers: chứa các class view controller của các màn hình, chia nhóm theo màn hình.
+Comment:
+	•	Các hàm dùng chung bắt buộc phải comment công dụng của hàm, tham số đầu vào, kết quả đầu ra.
+	•	Các hàm gọi API cũng cần comment (ví dụ tham số nào bắt buộc).
+	•	Bỏ User Name ở phần Comment header của file. Phần tên Copyright mặc định là GMO RunSystem (Cách bỏ User Name mặc định và setting tên Organization).
+Log:
+	•	Tất cả sử dụng CMLog (hoặc SKLog) thay cho NSLog.
+Các quy định kỹ thuật:
+Các kiến thức bắt buộc phải nắm:
+	•	UIKit framework: dùng loại control nào vào việc gì, viết custom view, sử dụng UITableView, viết custome table view cell.
+	•	Auto layout
+	•	Auto Reference Counting, ARC với property của class, IBOutlet, delegate, Block.
+	•	Build app & xuất ra IPA cho KH test.
+	•	Chạy Debug: chạy dò xem lỗi ở chỗ nào.
+	•	Sử dụng Google: chạy debug báo ra 1 đoạn lỗi => search google để tìm giải pháp.
+Các quy định riêng:
+	•	UI sử dụng AutoLayout.
+	•	Sử dụng ARC.
+	•	Đối với sử dụng delegate để callback thì delegate nên để weak.
+	•	Class dùng property. Không dùng biến internal, không dùng synthesize. Đối với property chỉ truy cập trực tiếp vào biến (_property) trong hàm init.
+@interface EXClassName {
+   NSString *_name; // Không dùng
+}
+
+@property (nonatomic, strong) NSString *name; // thay vào đó dùng property.
+
+@end
+
+@implement EXClassName
+
+-(NSString *)getFullName {
+   self.name // sử dụng self. để truy cập giá trị của name
+}
+
+@end
+
+	•	Đối với các kiểu số (int, float ...), string ưu tiên sử dụng const. Sử dụng define chủ yếu làm cờ compile hay biến môi trường.
+	•	Property cần liệt kê đủ thuộc tính (vd (nonatomic, strong)).
+	•	Định nghĩa enum bằng NS_ENUM.
+	•	Đối với property read-write sử dụng '.', property read-only sử dụng '[]' (vd dùng [array count], view.backgroundColor, ko dùng array.count, [view setBackgroundColor:]).
+	•	Ưu tiên sử dụng khai báo dạng ngắn đối với array, dictionary hay number (vd array = @[item1, item2 ...], dic = @{key1: val1, key2: val2, ...], @YES, @1, @(num)).
+	•	Kiểu float bắt buộc có đuôi .0 hoặc .0f (vd dùng CGFloat f = 1.0f thay vì CGFloat f = 1)
+	•	Các biểu thức điều kiện bắt buộc trả về BOOLEAN (vd object dùng if (obj != nil) thay vì if (obj), int if (i != 0) thay vì if (i)). Các biểu thức..
+ Swift:
+	•	Dùng các data types của Swift thay vì của ObjC (nếu không bắt buộc): dùng String, var array ... thay vì dùng NSString, NSMutableArray ...
+	•	Array, Dictionary sử dụng var array = [String]() thay vì var array = Array<String>.
+	•	Sử dụng khởi tạo giá trị của biến kiểu Swift (vd var array = [String]()) thay vì khởi tạo trong 1 hàm như ở ObjC (vd trong viewDidLoad). Ngoài ra cũng cần chú ý dùng let & var: vd biến nào không thay đổi giá trị trong khi sử dụng thì không cần dùng var.
+	•	Không lạm dụng ! => biến nào có thể nil đều phải dùng ? và xử lý check nil.
+Khung coding như sau:
+	•	Chia thành 2 luồng chính: luồng xử lý giao diện và luồng xử lý data.
+	•	Với mỗi task thì chia nhỏ thành các task con và xử lý từng cái.
+	•	Cụ thể về luồng xử lý:
+	◦	Các class View Controller chỉ xử lý các hành động liên quan đến UI (fill dữ liệu lên UI, nhận hành động IBAction ...).
+	◦	Xử lý data của view controller để trong class riêng (gọi là class business). Như vậy mỗi view controller có ít nhất 1 class business. Class business chỉ thực hiện các hành động liên quan đến data. Khi xử lý xong data thì notify lại cho view controller xử lý hiển thị lên UI (thông qua delegate, block, NSNotification... ).
+	◦	Cần chú ý các hàm update UI của view controller phải chạy trên main thread (các class business có thể sử dụng dispatch_asynch với get_main_queue() hoặc performOnMainThread).
+	•	Một số trường hợp cụ thể:
+	◦	Mỗi API request làm 1 class, bao gồm thực hiện request, lưu data trả về. View controller nào gọi api thì sẽ hiển thị data trong class này.
+	◦	Database tạo 1 object dùng chung, đọc ghi data đều phải thông qua object này.
+	◦	Download file data (movie, zip... ) cũng phải tạo 1 object dùng chung quản lý việc download.
+	•	Cụ thể về chia nhỏ task:
+	◦	Chia nhỏ giao diện: sử dụng UITableView - chia nhỏ màn hình thành các cell. Sử dụng Container view - 1 view controller gồm nhiều view controller nhỏ. Custom view cũng có thể bao gồm nhiều custom view khác nhau. Xử lý hiển thị data của thành phần nào thì thực hiện trong thành phần đó (vd Custom table view cell thì fill data xử lý trong cell, không xử lý trong View controller).
+	◦	Sử dụng subclass để tránh phải viết lại code: các class có thể thực hiện những task giống nhau cũng như có những task riêng.
+	◦	Các hàm cũng chia nhỏ thành các hàm con: dễ maintain, không phải thụt dòng (indent) quá nhiều, có thể tách ra thành các hàm common để dùng chung.
+	•	Trường hợp cụ thể:
+	◦	Mỗi project phải có 1 view controller base cho tất cả các view controller.
+	◦	Mỗi project phải có 1 class base cho tất cả các API request class.
+	•	Khi bắt đầu làm 1 màn hình, cần note ra:
+	◦	Các thành phần của màn hình này, từ đó quyết định dùng UIControl nào
+	◦	View controller (view controller chính, view controller con (nếu có)), class custom table cell (tạo mới hay sử dụng lại có sẵn)
+	◦	Class business
+	◦	Các class data của view controller.
+Lib dùng chung:
+	•	Mọi member đều có thể viết lib dùng chung cho các project.
+	•	Lib sau khi qua review sẽ được add vào group Commons.iOS trên dev.runsystem.vn.
+	•	Lib dùng chung phải support cài đặt bằng CocoaPods (hướng tới phải support cả Carthage).
+	•	Người viết lib phải chịu trách nhiệm chính trong việc maintain, debug lib, support sử dụng.
+1 số quy định khác:
+	•	Các công cụ sử dụng khi code
+	•	Màn hình sạch: Desktop không để file.
+	•	Tự động khoá màn hình sau 10 phút.
+	•	Các project để trong 1 partition riêng, ko để trong thư mục HOME nhằm tránh mất mát DL khi cài lại hoặc xoá account.
+	•	File h chỉ khai báo các property, hàm được sử dụng ở các file, class khác. Trong đó không cần khai báo trước các hàm IBAction.
+	•	Git dev.runsystem.vn sử dụng SSH.
+	•	Quy định về ISO: không share code, project, tài liệu project ra ngoài.
+
+Hướng dẫn cài đặt SSH cho GIT tại dev.runsystem.vn
+Tạo SSH key:
+Chạy trong Terminal:
+
+ssh-keygen -t rsa -C "your_email@runsystem.net"
+Khi tạo key sẽ được hỏi đường dẫn tạo file, mặc định /.ssh/id_rsa (private key) & /.ssh/id_rsa.pub (public key). Lưu ý khi tạo nên nhập mật khẩu để có thể setting được trong XCode. Nếu có 2 file này rồi thì có thể bỏ qua bước trên.
+
+Sau đó copy tất tần tật nội dung file public key id_rsa.pub, vào dev.runsystem.vn => Trang profile => Edit Profile Settings => tab SSH Keys => Add SSH Key và paste nội dung public key vào.
+
+Trong Terminal có thể show luôn nội dung file public key:
+
+cat ~/.ssh/id_rsa.pub
+Config SSH:
+Lưu nội dung sau vào file ~/.ssh/config:
+
+Host dev.runsystem.vn
+Port 1010
+RSAAuthentication yes
+IdentityFile ~/.ssh/id_rsa
+User your_email@runsystem.net
+
+GIT:
+Clone project với URL SSH trên dev.runsystem.vn: vd git@dev.runsystem.vn:commons-ios/rsutils.git.
+
+Đối với project đã clone bằng HTTPS có thể chuyển sang GIT - chạy trong terminal tại thư mục project:
+
+git config remote.origin.url "git@dev.runsystem.vn:commons-ios/rsutils.git"
+ Hướng dẫn sử dụng các lib CocoaPods và Carthage của team
+Giai đoạn Code:
+Tức là giai đoạn chưa phải gửi source cho khách hàng, chỉ cần build app. Trường hợp KH cùng code thì nên dùng Carthage.
+
+Sử dụng CocoaPods:
+Cài đặt CocoaPods nếu chưa có: sudo gem install cocoapods.
+Tạo Podfile theo hướng dẫn CocoaPods Get Started.
+Chạy pod install.
+Chỉ cần commit lên git file Podfile, bỏ qua file .xcworkspace và thư mục Pods.
+Trong code có thể import header #import "file.h" hoặc @import Tên_Framework (trường hợp này Podfile cần setting use_frameworks! + project deploy từ iOS 8 trở lên).
+Sử dụng Carthage: chỉ áp dụng với các project deploy target từ iOS 8 (mới support framework).
+Cài đặt Carthage nếu chưa có: Download Carthage.
+Tạo Cartfile: Xem hướng dẫn.
+Chạy carthage update.
+Vào project settings, mục General, kéo các framework trong thư mục Carthage/Build/iOS vào mục Linked Frameworks and Libraries. Vào mục Build Phases, thêm New Run Script Phase (nút +), đặt tên tuỳ ý (recommend Carthage Install Framework), mục Shell (ô dưới dòng /bin/sh) nhập /usr/local/bin/carthage copy-frameworks, nhập các framework vào mục Input files (vd $(SRCROOT)/Carthage/Build/iOS/RSUtils.framework).
+Chỉ cần commit lên git các file framework trong thư mục Carthage/Build/iOS, có thể commit cả file Cartfile.
+Trong code có thể import header #import <Tên_Framework/file.h> hoặc @import Tên_Framework.
+Giai đoạn release:
+Là giai đoạn phải gửi source cuối cùng cho khách hàng => sử dụng CocoaPods.
+
+Clone toàn bộ các lib cần dùng (chú ý branch/version) vào trong thư mục project (vd PROJECT_DIR/InternalLib). Xoá các file không liên quan như .git README.md Cartfile ..., chỉ cần giữ lại file .podspec và thư mục Pod chứa source code của lib.
+Sửa file Podfile của project theo mẫu: pod 'Tên_lib', :path => 'InternalLib/Tên_Lib_Folder' (trong đó đường dẫn tương ứng là PROJECT_DIR/Podfile, PROJECT_DIR/InternalLib/Tên_Lib_Folder/Tên_lib.podspec).
+pod install lại.
+Khi commit lên git thì phải bao gồm cả thư mục lib InternalLib (tương tự zip cả thư mục này khi gửi source cho KH). Source này nên để riêng 1 branch release để không làm ảnh hưởng đến develop.
+Đối với một số lib của team như CommonLog khi release cho khách hàng thì dùng các branch release/... để bỏ bớt các 
+lib không cần thiết.
+NSCache :http://stackoverflow.com/questions/29434617/ios-best-practice-to-save-images-locally-nscache-vs-save-in-document-directo
+                       
