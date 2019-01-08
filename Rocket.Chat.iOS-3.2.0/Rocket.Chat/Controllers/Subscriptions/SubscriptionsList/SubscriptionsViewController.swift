@@ -283,7 +283,7 @@ extension SubscriptionsViewController: UISearchBarDelegate {
                 titleView?.updateServerName(name: serverURL)
             }
         } else {
-            titleView?.updateServerName(name: "Rocket.Chat")
+            titleView?.updateServerName(name: "uBegin")
         }
     }
 

@@ -103,7 +103,7 @@
 "connection.waiting_for_network.banner.message" = "Περιμένετε για το δίκτυο"; 
 
 // Onboarding
-"onboarding.label_welcome" = "Καλώς ορίσατε στο Rocket Chat"; 
+"onboarding.label_welcome" = "Καλώς ορίσατε στο uBegin";
 "onboarding.label_subtitle" = "Team Communication"; // TODO
 "onboarding.button_connect_server" = "Συνδεθείτε σε ένα εξυπηρετητή"; 
 "onboarding.button_create_server" = "Συνδεθείτε σε ένα Χώρο Εργασίας"; 
@@ -351,14 +351,14 @@
 
 // Change Application Icon
 "myaccount.settings.changeicon.title" = "Επιλέξτε Εικονίδιο";
-"myaccount.settings.changeicon.header" = "Μπορείτε να αλλάξετε πώς το δικό σας Rocket.Chat εικονίδιο θα φαίνεται στην συσκευή σας. Παρακαλούμε επιλέξτε ένα από τα παρακάτω εικονίδια, όποιο σας αρέσει πιο πολύ.";
+"myaccount.settings.changeicon.header" = "Μπορείτε να αλλάξετε πώς το δικό σας uBegin εικονίδιο θα φαίνεται στην συσκευή σας. Παρακαλούμε επιλέξτε ένα από τα παρακάτω εικονίδια, όποιο σας αρέσει πιο πολύ.";
 "myaccount.settings.changeicon.errortitle" = "Δεν μπορούμε να αλλάξουμε εικονίδιο";
 "myaccount.settings.changeicon.iosversion" = "Εναλλακτικά εικονίδια εφαρμογής δεν υποστηρίζονται σε iOS εκδόσεις μικρότερες από 10.3";
 
 // Change Language
 "myaccount.settings.language.title" = "Μεταβολή Γλώσσας";
 "myaccount.settings.language.reset" = "Επαναφορά στην Προεπιλεγμένη";
-"myaccount.settings.language.message" = "Έχετε μεταβάλει τις ρυθμίσεις γλώσσας. Πρέπει να επανεκκινήσετε το Rocket.Chat ώστε να τεθούν σε εφαρμογή οι νέες ρυθμίσεις.";
+"myaccount.settings.language.message" = "Έχετε μεταβάλει τις ρυθμίσεις γλώσσας. Πρέπει να επανεκκινήσετε το uBegin ώστε να τεθούν σε εφαρμογή οι νέες ρυθμίσεις.";
 
 // Notifications preferences
 "myaccount.settings.notifications.title" = "Notification Preferences"; // TODO
@@ -416,7 +416,7 @@
 "web_browser.opera.title" = "Opera Mini";
 "web_browser.firefox.title" = "Firefox";
 "myaccount.settings.web_browser.title" = "Πρόγραμμα Περιήγησης"; 
-"myaccount.settings.web_browser.footer" = "Αυτή η εφαρμογή θα χρησμοποιηθεί για να ανοίξει συνδέσμους στο Rocket Chat."; 
+"myaccount.settings.web_browser.footer" = "Αυτή η εφαρμογή θα χρησμοποιηθεί για να ανοίξει συνδέσμους στο uBegin."; 
 
 // Update Profile
 "myaccount.settings.profile.title" = "Λογαριασμός"; 

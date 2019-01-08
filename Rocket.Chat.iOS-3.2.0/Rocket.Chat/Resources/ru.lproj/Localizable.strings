@@ -103,7 +103,7 @@
 "connection.waiting_for_network.banner.message" = "Ожидание сети";
 
 // Onboarding
-"onboarding.label_welcome" = "Добро пожаловать в Rocket Chat";
+"onboarding.label_welcome" = "Добро пожаловать в uBegin";
 "onboarding.label_subtitle" = "Team Communication"; // TODO
 "onboarding.button_connect_server" = "Соединиться с сервером";
 "onboarding.button_create_server" = "Создать новый сервер";
@@ -351,7 +351,7 @@
 
 // Change Application Icon
 "myaccount.settings.changeicon.title" = "Выберите значок";
-"myaccount.settings.changeicon.header" = "Вы можете изменить вид значка Rocket.Chat на вашем устройстве. Выберите один из понравившихся значков.";
+"myaccount.settings.changeicon.header" = "Вы можете изменить вид значка uBegin на вашем устройстве. Выберите один из понравившихся значков.";
 "myaccount.settings.changeicon.errortitle" = "Невозможно изменить значок";
 "myaccount.settings.changeicon.iosversion" = "Альтернативные значки приложений не поддерживаются в версии iOS ниже 10.3";
 
@@ -416,7 +416,7 @@
 "web_browser.opera.title" = "Opera Mini";
 "web_browser.firefox.title" = "Firefox";
 "myaccount.settings.web_browser.title" = "Веб-браузер";
-"myaccount.settings.web_browser.footer" = "Это приложение будет использоваться для открытия ссылок в Rocket Chat.";
+"myaccount.settings.web_browser.footer" = "Это приложение будет использоваться для открытия ссылок в uBegin.";
 
 // Update Profile
 "myaccount.settings.profile.title" = "Профиль";

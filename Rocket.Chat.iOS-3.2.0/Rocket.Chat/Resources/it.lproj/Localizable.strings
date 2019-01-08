@@ -103,7 +103,7 @@
 "connection.waiting_for_network.banner.message" = "In attesa della rete";
 
 // Onboarding
-"onboarding.label_welcome" = "Benvenuto in Rocket Chat";
+"onboarding.label_welcome" = "Benvenuto in uBegin";
 "onboarding.label_subtitle" = "Open Source Communication";
 "onboarding.button_connect_server" = "Connessione a un server";
 "onboarding.button_create_server" = "Crea un nuovo spazio di lavoro";
@@ -352,14 +352,14 @@
 
 // Change Application Icon
 "myaccount.settings.changeicon.title" = "Scegli una Icona";
-"myaccount.settings.changeicon.header" = "Puoi cambiare l'aspetto della tua icona per Rocket.Chat sul tuo dispositivo. Scegli una delle seguenti icone, a seconda di quale ti piace di più.";
+"myaccount.settings.changeicon.header" = "Puoi cambiare l'aspetto della tua icona per uBegin sul tuo dispositivo. Scegli una delle seguenti icone, a seconda di quale ti piace di più.";
 "myaccount.settings.changeicon.errortitle" = "Non posso cambiare icona";
 "myaccount.settings.changeicon.iosversion" = "Le icone delle applicazioni alternative non sono supportate nella versione iOS inferiore a 10.3";
 
 // Change Language
 "myaccount.settings.language.title" = "Cambiare Lingua";
 "myaccount.settings.language.reset" = "Rimettere lingua predefinita";
-"myaccount.settings.language.message" = "Hai cambiato le impostazioni della lingua. È necessario riavviare Rocket.Chat prima che le nuove impostazioni abbiano effetto.";
+"myaccount.settings.language.message" = "Hai cambiato le impostazioni della lingua. È necessario riavviare uBegin prima che le nuove impostazioni abbiano effetto.";
 
 // Notifications preferences
 "myaccount.settings.notifications.title" = "Preferenze di Notifica";
@@ -417,7 +417,7 @@
 "web_browser.opera.title" = "Opera Mini";
 "web_browser.firefox.title" = "Firefox";
 "myaccount.settings.web_browser.title" = "Web browser";
-"myaccount.settings.web_browser.footer" = "Questa applicazione verrà utilizzata per aprire i collegamenti in Rocket Chat.";
+"myaccount.settings.web_browser.footer" = "Questa applicazione verrà utilizzata per aprire i collegamenti in uBegin.";
 
 // Update Profile
 "myaccount.settings.profile.title" = "Profilo";

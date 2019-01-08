@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Rocket Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FN-Px-5xv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to uBegin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FN-Px-5xv">
                                 <rect key="frame" x="15" y="294" width="345" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="Bs5-Ep-8ni"/>
@@ -1362,10 +1362,10 @@ to mention you in messages</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="cXi-ex-hQo"/>
-        <segue reference="jjd-tI-Nfg"/>
+        <segue reference="Ivf-BH-9zE"/>
         <segue reference="B9E-PP-gIC"/>
         <segue reference="9kY-lU-ad7"/>
-        <segue reference="yUJ-js-l73"/>
+        <segue reference="tMH-P7-q5C"/>
         <segue reference="kz9-vv-nLs"/>
     </inferredMetricsTieBreakers>
 </document>

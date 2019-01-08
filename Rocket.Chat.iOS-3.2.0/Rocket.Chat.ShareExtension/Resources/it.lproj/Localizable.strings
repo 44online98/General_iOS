@@ -9,7 +9,7 @@
 "global.ok" = "Ok";
 
 "alert.no_servers.title" = "Nessun Server";
-"alert.no_servers.message" = "Devi essere connesso ad almeno un server Rocket.Chat per condividere qualcosa.";
+"alert.no_servers.message" = "Devi essere connesso ad almeno un server uBegin per condividere qualcosa.";
 
 "servers.title" = "Servers";
 

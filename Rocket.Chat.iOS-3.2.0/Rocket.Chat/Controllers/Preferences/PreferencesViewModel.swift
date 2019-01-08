@@ -28,14 +28,14 @@ final class PreferencesViewModel {
     internal let theme = localized("theme.settings.title")
 
     internal let licenseURL = URL(string: "https://github.com/RocketChat/Rocket.Chat.iOS/blob/develop/LICENSE")
-    internal let shareURL = URL(string: "https://itunes.apple.com/app/rocket-chat/id1148741252?ls=1&mt=8")
-    internal let reviewURL = URL(string: "itms-apps://itunes.apple.com/app/id1148741252?action=write-review&mt=8")
+    internal let shareURL = URL(string: "https://itunes.apple.com/app/ubegin/id1179308546?ls=1&mt=8")
+    internal let reviewURL = URL(string: "itms-apps://itunes.apple.com/app/id1179308546?action=write-review&mt=8")
 
     internal let trackingTitle = localized("myaccount.settings.tracking.title")
     internal var trackingFooterText = localized("myaccount.settings.tracking.footer")
 
     internal var serverName: String {
-        var serverName = "Rocket.Chat"
+        var serverName = "uBegin"
 
         if let authServerName = AuthSettingsManager.settings?.serverName {
             serverName = authServerName
@@ -100,7 +100,7 @@ final class PreferencesViewModel {
         return appInfo(.build)
     }
 
-    internal let supportEmail = "Rocket.Chat Support <support@rocket.chat>"
+    internal let supportEmail = "uBegin Support <support@rocket.chat>"
 
     internal let supportEmailSubject = "Support on iOS native application"
 
@@ -134,11 +134,11 @@ final class PreferencesViewModel {
     #endif
 
     internal let numberOfSections = 7
-
+    //canChangeAppIcon ? 7 : 6
     internal func numberOfRowsInSection(_ section: Int) -> Int {
         switch section {
         case 0: return 1
-        case 1: return canChangeAppIcon ? 7 : 6
+        case 1: return 6
         case 2: return canViewAdministrationPanel ? 1 : 0
         case 3: return 3
         case 4: return 1

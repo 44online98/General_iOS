@@ -103,7 +103,7 @@
 "connection.waiting_for_network.banner.message" = "Oczekiwanie na sieć";
 
 // Onboarding
-"onboarding.label_welcome" = "Witamy w Rocket Chat";
+"onboarding.label_welcome" = "Witamy w uBegin";
 "onboarding.label_subtitle" = "Team Communication"; // TODO
 "onboarding.button_connect_server" = "Połącz z serwerem";
 "onboarding.button_create_server" = "Utwórz nowy obszar roboczy";
@@ -351,14 +351,14 @@
 
 // Change Application Icon
 "myaccount.settings.changeicon.title" = "Wybierz ikonę";
-"myaccount.settings.changeicon.header" = "Możesz zmienić to jak wygląda ikona aplikacji Rocket.Chat na Twoim urządzeniu. Wybierz jedną z ikon poniżej, która podoba Ci się najbardziej.";
+"myaccount.settings.changeicon.header" = "Możesz zmienić to jak wygląda ikona aplikacji uBegin na Twoim urządzeniu. Wybierz jedną z ikon poniżej, która podoba Ci się najbardziej.";
 "myaccount.settings.changeicon.errortitle" = "Nie można zmienić ikony";
 "myaccount.settings.changeicon.iosversion" = "Alternatywne ikony aplikacji nie są wspierane na systemie poniżej wersji 10.3";
 
 // Change Language
 "myaccount.settings.language.title" = "Zmień język";
 "myaccount.settings.language.reset" = "Przywróć domyślny język";
-"myaccount.settings.language.message" = "Ustawienia języka zostały zmienione. Musisz ponownie uruchomić Rocket.Chat aby nowe ustawienia zostały zastosowane.";
+"myaccount.settings.language.message" = "Ustawienia języka zostały zmienione. Musisz ponownie uruchomić uBegin aby nowe ustawienia zostały zastosowane.";
 
 // Notifications preferences
 "myaccount.settings.notifications.title" = "Notification Preferences"; // TODO
@@ -416,7 +416,7 @@
 "web_browser.opera.title" = "Opera Mini";
 "web_browser.firefox.title" = "Firefox";
 "myaccount.settings.web_browser.title" = "Przeglądarka";
-"myaccount.settings.web_browser.footer" = "Ta aplikacja będzie używana do otwierania linków w Rocket Chat.";
+"myaccount.settings.web_browser.footer" = "Ta aplikacja będzie używana do otwierania linków w uBegin.";
 
 // Update Profile
 "myaccount.settings.profile.title" = "Profil";

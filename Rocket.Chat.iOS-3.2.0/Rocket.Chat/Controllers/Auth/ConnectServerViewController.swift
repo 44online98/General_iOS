@@ -83,7 +83,7 @@ final class ConnectServerViewController: BaseViewController {
         super.viewDidLoad()
 
         if shouldAutoConnect {
-            textFieldServerURL.text = "open.rocket.chat"
+            textFieldServerURL.text = "chat-stage.ubegin.com"
         }
 
         if !(DatabaseManager.servers?.count ?? 0 > 0) {

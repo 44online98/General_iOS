@@ -103,7 +103,7 @@
 "connection.waiting_for_network.banner.message" = "En attente du réseau...";
 
 // Onboarding
-"onboarding.label_welcome" = "Bienvenue sur Rocket Chat";
+"onboarding.label_welcome" = "Bienvenue sur uBegin";
 "onboarding.label_subtitle" = "Team Communication"; // TODO
 "onboarding.button_connect_server" = "Se connecter à un serveur";
 "onboarding.button_create_server" = "Créer un nouvel espace de travail";
@@ -358,7 +358,7 @@
 // Change Language
 "myaccount.settings.language.title" = "Changer la langue";
 "myaccount.settings.language.reset" = "Remettre la langue par défaut";
-"myaccount.settings.language.message" = "Vous avez changé la langue. Vous devez redémarrer Rocket.Chat pour que le changement soit effectif.";
+"myaccount.settings.language.message" = "Vous avez changé la langue. Vous devez redémarrer uBegin pour que le changement soit effectif.";
 
 // Notifications preferences
 "myaccount.settings.notifications.title" = "Notification Preferences"; // TODO

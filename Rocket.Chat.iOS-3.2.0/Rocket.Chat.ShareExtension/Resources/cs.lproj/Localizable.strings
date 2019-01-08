@@ -9,7 +9,7 @@
 "global.ok" = "Ok"; //TODO
 
 "alert.no_servers.title" = "No servers"; //TODO
-"alert.no_servers.message" = "You need to join at least one Rocket.Chat server in order to share something."; //TODO
+"alert.no_servers.message" = "You need to join at least one uBegin server in order to share something."; //TODO
 
 "servers.title" = "Servers"; //TODO
 

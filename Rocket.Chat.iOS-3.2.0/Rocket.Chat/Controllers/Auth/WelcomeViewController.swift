@@ -92,6 +92,15 @@ final class WelcomeViewController: BaseViewController {
         super.viewDidLoad()
         setupAppearance()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let connectServer = UIStoryboard(name: "Auth", bundle: nil).instantiateViewController(withIdentifier: "ConnectServerViewController") as? ConnectServerViewController {
+            connectServer.shouldAutoConnect = true
+            if let navigator = navigationController {
+                navigator.pushViewController(connectServer, animated: true)
+            }
+        }
+    }
 
     // MARK: Setup
 
