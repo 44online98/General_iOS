@@ -191,20 +191,19 @@ class LoginTableViewController: BaseTableViewController {
 
         let sendAction = UIAlertAction(title: localized("Send"), style: .default, handler: { _ in
             guard let text = alert.textFields?.first?.text else { return }
-
-            AuthManager.sendForgotPassword(email: text, completion: { result in
-                guard !result.isError() else {
+            
+            UBeginManager.sendForgotPassword(forEmail: text, completion: { (error) in
+                if error != nil {
                     Alert(
                         title: localized("auth.forgot_password.title"),
                         message: localized("error.socket.default_error.message")
-                    ).present()
-                    return
+                        ).present()
+                } else {
+                    Alert(
+                        title: localized("auth.forgot_password.title"),
+                        message: localized("auth.forgot_password.success")
+                        ).present()
                 }
-
-                Alert(
-                    title: localized("auth.forgot_password.title"),
-                    message: localized("auth.forgot_password.success")
-                ).present()
             })
         })
 
