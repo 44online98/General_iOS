@@ -15,8 +15,8 @@ extension AuthSettings: ModelMappeable {
     func map(_ values: JSON, realm: Realm?) {
         self.siteURL = objectForKey(object: values, key: "Site_Url")?.string?.removingLastSlashIfNeeded()
         self.cdnPrefixURL = objectForKey(object: values, key: "CDN_PREFIX")?.string?.removingLastSlashIfNeeded()
-
-        self.serverName = objectForKey(object: values, key: "Site_Name")?.string
+        // objectForKey(object: values, key: "Site_Name")?.string
+        self.serverName = "uBegin"
 
         if let siteURL = self.siteURL {
             // Try URL or use defaultURL instead
