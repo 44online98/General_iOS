@@ -1,6 +1,0 @@
-https://www.twilio.com/docs/api/ip-messaging/changelogs/ios#change-logs
-https://www.twilio.com/docs/api/ip-messaging/guides/typing-indicator#typing-indicator-send
-https://media.twiliocdn.com/sdk/ios/ip-messaging/releases/0.15.2/docs/Classes/TWMChannels.html
-https://media.twiliocdn.com/sdk/ios/ip-messaging/releases/0.15.2/docs/Classes/TWMChannels.html
-https://media.twiliocdn.com/sdk/ios/ip-messaging/releases/0.15.2/docs/Classes/TWMChannel.html
-cd chatbox/
